@@ -161,7 +161,7 @@ export default {
       for (var i = 1; i < has.length; i++) {
         Q += ";" + has[i];
       } 
-      for (var i = 0; i < ss.others; i++) {
+      for (var i = 0; i < ss.others.length; i++) {
         Q += ";" + ss.others[i];
       }
       ss.axios.get("/rng/api/user.info?lang=en&handles=" + Q).then(res => {
